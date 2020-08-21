@@ -1,4 +1,9 @@
-1.
-2.
-3.
-4.
+1. ls -l
+2. mv <filename> <directoryname>
+3. chmod <number> <filename>
+4. pwd
+5. no
+6. find
+7. ps -A
+8. kill <PID(process identifier number)>
+9. diff <filea> <fileb>
