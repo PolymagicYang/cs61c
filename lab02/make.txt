@@ -1,7 +1,7 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
+1. clean
+2. .c.o  
+3. gcc
+4. C99
+5. assignment
+6. an open-source Unix-like operating system first released by Apple Inc.
+7. (LFSR_PROG)

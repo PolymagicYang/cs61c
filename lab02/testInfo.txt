@@ -1,0 +1,29 @@
+
+Testing get_bit()
+
+get_bit(0x0000004e,0): 0x00000000, correct
+get_bit(0x0000004e,1): 0x00000001, correct
+get_bit(0x0000004e,5): 0x00000000, correct
+get_bit(0x0000001b,3): 0x00000001, correct
+get_bit(0x0000001b,2): 0x00000000, correct
+get_bit(0x0000001b,9): 0x00000000, correct
+
+Testing set_bit()
+
+set_bit(0x0000004e,2,0): 0x0000004a, correct
+set_bit(0x0000006d,0,0): 0x0000006c, correct
+set_bit(0x0000004e,2,1): 0x0000004e, correct
+set_bit(0x0000006d,0,1): 0x0000006d, correct
+set_bit(0x0000004e,9,0): 0x0000004e, correct
+set_bit(0x0000006d,4,0): 0x0000006d, correct
+set_bit(0x0000004e,9,1): 0x0000024e, correct
+set_bit(0x0000006d,7,1): 0x000000ed, correct
+
+Testing flip_bit()
+
+flip_bit(0x0000004e,0): 0x0000004e, expected 0x0000004f
+flip_bit(0x0000004e,1): 0x0000004c, correct
+flip_bit(0x0000004e,2): 0x0000004a, correct
+flip_bit(0x0000004e,5): 0x0000004e, expected 0x0000006e
+flip_bit(0x0000004e,9): 0x0000004e, expected 0x0000024e
+
