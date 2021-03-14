@@ -1,9 +1,9 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1. gdb --args a.out 1 2 3
+2. b --lineNum: set breakpoint at lineNum, b +lineNum: set breakpoint at the line relative to current line, b <function name>: set breakpoint for function, b <lineNum> if condition: when condition is satisfied, set the breakpoint at lineNum, b <filename>:lineNum: set breakpoint in filename at line lineNum.
+3. n, s.
+4. n, s
+5. c
+6. p <expression>
+7. define a macro as name-stop: def hook-stop p variable end
+8. info locals
+9. q

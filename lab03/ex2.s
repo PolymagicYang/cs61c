@@ -21,8 +21,8 @@ dest:
 
 .text
 main:
-    addi t0, x0, 0
-    addi s0, x0, 0
+    addi t0, x0, 0 # t0 stores variable k.
+    addi s0, x0, 0 # s0 stores variable sum.
     la s1, source
     la s2, dest
 loop:

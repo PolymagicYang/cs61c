@@ -21,4 +21,18 @@ main:
     ecall # Exit
 
 factorial:
-    # YOUR CODE HERE
+    addi sp, sp, -4
+    sw ra, 0(sp)
+    addi s0, x0, 1 # initialize the accurate number
+
+loop:
+    beq x0, a0, end
+    mul s0, s0, a0
+    addi a0, a0, -1
+    jal x0, loop    # ... while i!= 0
+
+end:
+    add a0, a0, s0
+    lw ra, 0(sp)
+    addi sp, sp, 4
+    jr ra
