@@ -1,0 +1,5 @@
+1. jal map -> jal ra map, function must return to the address stored in ra
+2. addi t1, t1, 4
+3. add t0, s0, x0 -> lw t0, 0(s0)
+4. lw a1 0(s1) -> mv a1 s1
+5. la a0, 8(s0) -> lw a0, 8(s0): la can only take the imm as argument
